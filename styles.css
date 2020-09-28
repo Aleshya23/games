@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: "Montserrat-Black";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  background-color: hsla(217, 17%, 21%, 100%);
+}
+
+.container-1, .container-2, .container-3, .container-4 {
+  background-color: #98c1d9;
+  border: 2px solid black;
+  margin: 70px auto;
+  width: 75%;
+  text-align: center;
+}
+
+.h2, h2 {
+  font-family: "Montserrat-Black";
+  font-size: 2rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Black";
+  margin-bottom: .5rem;
+  line-height: 1.2;
+}
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps {
+  display: flex;
+  border: 2px solid black;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+
+/* BMI Calculator */
+input {
+  box-shadow: 1px 1px 3px 1px black;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+#score {
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Dice Game */
+.container-2 img {
+  width: 30%;
+}
+
+.row {
+  display: flex;
+  border: 2px solid black;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#repeat {
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Rock, paper, scissors */
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 100ms;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  margin-left: .1rem;
+  font-size: .5rem;
+  color: #333;
+}
+
+.result-selection {
+  opacity: .5;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 1.5rem;
+}
+
+/* Tic-tac-toe */
+.container-4 h4 {
+  font-size: 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+  height: 432px;
+  width: 432px;
+}
+
+.square {
+  border: 2px solid rgba(0, 0, 0, .75);
+  height: 140px;
+  width: 140px;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reset-button {
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+/* Footer Section */
+footer {
+  color: hsla(101, 78%, 71%, 100%);
+  text-align: center;
+  background-color: #343a40;
+  padding: 2rem;
+}

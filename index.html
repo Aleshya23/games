@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatibe" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>JavaScript for Fun</title>
+</head>
+
+<body>
+  <div class="container-1">
+    <h2>Challenge 1: BMI Calculator</h2>
+    <div class="flex-box-container-1">
+      <form>
+        <input id="weight" type="text" placeholder="Your weight in kilograms">
+        <br>
+        <br>
+        <input id="height" type="text" placeholder="Your height in meters">
+        <br>
+      </form>
+      <div>
+        <input class="submit btn btn-success" type="button" value="Submit" onclick="bmi()" />
+      </div>
+      <div>
+        <button class="btn btn-danger" onclick="location.reload()">Reset</button>
+      </div>
+    </div>
+    <div class="flex-box-container-1">
+      <p id="score">Here will be your result</p>
+    </div>
+  </div>
+
+  <div class="container-2">
+    <h2>Challenge 2: Dice Game</h2>
+    <div class="row">
+      <div class="image-box col-lg-6">
+        <h3>Player 1</h3>
+        <img class="img1" src="dice6.png">
+      </div>
+      <div class="image-box col-lg-6">
+        <h3>Player 2</h3>
+        <img class="img2" src="dice6.png">
+      </div>
+    </div>
+    <h1>Refresh Me</h1>
+    <div>
+      <button class="btn btn-success" id="repeat" onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <div class="container-3">
+    <h2>Challenge 3: Rock, Paper, Scissors</h2>
+    <div class="flex-box-rps" id="flex-box-rps-div">
+      <h2>Choose your move!</h2>
+      <div class="selections">
+        <button class="selection" data-selection="rock">✊</button>
+        <button class="selection" data-selection="paper">✋</button>
+        <button class="selection" data-selection="scissors">✌</button>
+      </div>
+      <div class="results">
+        <div>
+          You
+          <span class="result-score" data-your-score>0</span>
+        </div>
+        <div data-final-column>
+          Computer
+          <span class="result-score" data-computer-score>0</span>
+        </div>
+        <!-- <div class="result-selection winner">✊</div>
+            <div class="result-selection">✌</div> -->
+      </div>
+    </div>
+    <div>
+      <button class="btn btn-success" id="repeat" onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <div class="container-4">
+    <h1>Challenge 4: Tic-Tac-Toe</h1>
+    <div class="flex-box-rps" id="flex-box-rps-div">
+      <h4>It's X's turn!</h4>
+      <!-- Many websites are just divs on divs on divs. -->
+      <div class="flex-container flex-column">
+        <div class="flex-container flex-wrap" id="board">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="btn btn-success" id="reset-button" onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="app.js" charset="utf-8"></script>
+</body>
+<footer>
+  Made by Aleshya
+</footer>
+
+</html>
